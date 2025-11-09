@@ -4,20 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.test.js"
+    "test:cucumber": "npx cucumber-js tests/integration/features --require tests/integration/step_definitions --format @cucumber/pretty-formatter"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@cucumber/cucumber": "^12.2.0",
     "selenium-webdriver": "^4.38.0",
     "webdriver-manager": "^12.1.9"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@cucumber/pretty-formatter": "^2.4.1",
+    "apickli": "^3.0.3",
     "axios": "^1.13.2",
     "chai": "^6.2.0",
-    "mocha": "^11.7.5"
+    "mocha": "^11.7.5",
+    "prettyjson": "^1.2.5"
   }
 }
